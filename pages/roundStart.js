@@ -1,5 +1,5 @@
-var Service = require('./service')
-var Utils = require('./utils')
+var Service = require('../services/service')
+var Utils = require('../services/utils')
 var moment = require('momentjs')
 
 var user, page, ready = false;
@@ -75,15 +75,9 @@ function open() {
     }
 }
 
-function close() {
-    if(ready) {
-        page.close()
-    }
-}
 
 module.exports = {
     init: init,
     getPage: page,
-    open: open,
-    close: close
+    open: open
 };
