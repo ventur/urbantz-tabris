@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="urbantz" version="0.1.0">
+<widget id="urbantz" android-packageName="com.urbantz.app" version="0.1.0">
   <name>Urbantz</name>
   <description>
     Example Tabris.js App
