@@ -53,17 +53,16 @@ function open() {
                     text: moment(round.date).format('DD/MM')+'@'+moment(round.startTime).format('HH:mm') + '   ' + distance+'km    '+ time
                 }).appendTo(page);
 
-                var map = new tabris.ImageView({
-                    centerX: 0, top: [info, 5],
-                    image: {src: round.picture, scaleMode: 'fit'},
-                }).appendTo(page);
-
-
                 var button = new tabris.Button({
-                    bottom: 0, left: 0, right: 0, top:[map, 0],
+                    bottom: 0, left: 0, right: 0, height: 50,
                     text: 'Start',
                     background: '#23B5C3',
                     textColor: '#fff'
+                }).appendTo(page);
+
+                var map = new tabris.ImageView({
+                    centerX: 0, top: [info, 5], bottom:[button, 0],
+                    image: {src: round.picture, scaleMode: 'auto'},
                 }).appendTo(page);
 
                 button.on('select', function() {
