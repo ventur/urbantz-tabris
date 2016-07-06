@@ -67,7 +67,9 @@ function open() {
                 }).appendTo(page);
 
                 button.on('select', function() {
-                    //textView.set('text', 'Totally Rock!');
+                    var view = require('./map');
+                    view.init({round: round})
+                    view.open();
                 });
 
                 page.open();

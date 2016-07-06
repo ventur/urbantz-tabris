@@ -7,4 +7,7 @@
   <author email="dani@urbantz.com">
     Daniel
   </author>
+  <plugin name="com.eclipsesource.tabris.maps" spec="https://github.com/eclipsesource/tabris-maps.git">
+    <variable name="API_KEY_FOR_ANDROID" value="AIzaSyBzjmmN1ZRyLEHiAl9Awi9wMm8-2Kz2ZYg" />
+  </plugin>
 </widget>

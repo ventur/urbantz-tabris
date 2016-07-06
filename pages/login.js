@@ -48,7 +48,6 @@ function open() {
                 console.log('pass' , pass);
                 Service.login(email , pass)
                     .then(function(user) {
-                        console.log()
                         var view = require('./roundStart');
                         view.init({user: user})
                         view.open();
