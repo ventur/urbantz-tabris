@@ -7,6 +7,8 @@
   <author email="dani@urbantz.com">
     Daniel
   </author>
+  <content src="package.json"/>
+  <preference name="EnableDeveloperConsole" value="true" />
   <plugin name="com.eclipsesource.tabris.maps" spec="https://github.com/eclipsesource/tabris-maps.git">
     <variable name="API_KEY_FOR_ANDROID" value="AIzaSyBzjmmN1ZRyLEHiAl9Awi9wMm8-2Kz2ZYg" />
   </plugin>
